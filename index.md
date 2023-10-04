@@ -1,8 +1,6 @@
 # Hello World!
-## Heading Two
-*Italic*
-**Bold**
+## How are you?
 [Netflix] (https://www.netflix.com/browse)
 ![Image](heart.png)
 ---
-> Blockquote
+> Whats your favorite ruler?
