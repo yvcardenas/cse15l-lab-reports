@@ -3,15 +3,11 @@ In each of the following examples we will be going over commands **cd** "change 
 ## Examples using the commands with no arguments
 ![Image](LR1ex1.png) <br>
 ### cd 
-Since you do not have an argument you are not providing a driectory you would like to change to so nothing is done.
+This commands whole purpose is to change the directory you are in. If no argument is given, it does not know which directory you are wanting to change to so as a result nothing is done or shown.
 ### ls
-Using the ls command
+This command lists or 'prints' the files and/or folder in the given path. Since no path is given, it printed the files and folder withing the current directory we were in. In this case we were in the home directory so it only printed 'lecture1' since that is the only folder in that directory.
 ### cat
-
-<br> Since we do not have an argument using the cat only open an empty
-
-     -ls
-     -cat opened an empty writing node
+This commands purpose is to print the contents of one or more files given by the provided path. Since no path or argument was given, this simply does not let you run it and ultimately is awaiting a path input. User can use '^C' to exit.
 ## Examples using the commands with a path to a directory as an argument
 ![Image](LR1ex2.png) <br>
      -cd
