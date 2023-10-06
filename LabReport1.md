@@ -1,5 +1,5 @@
 # Lab Report 1 - Remote Access and FileSystem (Week 1)
-In each of the following examples we will be going over commands **cd**, **ls**, and **cat**.
+In each of the following examples we will be going over commands **cd** "change directory", **ls** "list files", and **cat** "concatenate".
 ## Examples using the commands with no arguments
 ![Image](ex1.png) <br>
 ### cd 
