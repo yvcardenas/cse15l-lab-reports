@@ -12,17 +12,17 @@ This commands purpose is to print the contents of one or more files given by the
 ## Examples using the commands with a path to a directory as an argument
 ![Image](LR1ex2.png) <br>
 *All of these examples were done in the home directory*
-###cd
+### cd
 Now that the command is given a 
-###ls
+### ls
 
-###cat
+### cat
 
 ## Examples using the commands with a path to a file as an argument
 ![Image](LR1ex3.png) <br>
 *All of these examples were done in the home directory*
-###cd
+### cd
 
-###ls
+### ls
 
-###cat
+### cat
