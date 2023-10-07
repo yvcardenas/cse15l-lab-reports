@@ -17,12 +17,13 @@ Now that the command has been given a path to follow, it can change the director
 ### ls
 Now that the command has been given a path to follow, it can list all the files and/or folders. Since the path that I provided led to working directory messages, there was no need for an argument but for example purposes the path certainly helped to visualize how to properly use the command. As seen the the screenshot, with the given path, all the folders/files in the messages directory was printed.
 ### cat
-
+As I mentioned earlier, the cat command prints the contents of one or more files. Since the path provided led to a directory/folder the command was unable to properly function. Instead of printing a files content, it informed the user that the argument was indeed a directory.
 ## Examples using the commands with a path to a file as an argument
 ![Image](LR1ex3.png) <br>
 *All of these examples were done in the home directory*
 ### cd
-
+As we know, the cd command is used to change directories. In this example the given path lead to a file which evidently meant that command was unable to properly frunction. Instead a message is printed informing the user that the path given was not to a directory. 
 ### ls
 
 ### cat
+In this example we get to finally see a functioning cat command. Since the path given was to a file, its content was printed. In this case the path leads to a file named 'es-mx.txt' and prints its content which is '¡Hola Mundo!' which means 'Hello World!' in Mexican Spanish.
