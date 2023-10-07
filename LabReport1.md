@@ -24,6 +24,6 @@ As I mentioned earlier, the cat command prints the contents of one or more files
 ### cd
 As we know, the cd command is used to change directories. In this example the given path lead to a file which evidently meant that command was unable to properly frunction. Instead a message is printed informing the user that the path given was not to a directory. 
 ### ls
-
+As we saw in the last set of examples, a path can be used as an argument when using the ls command. A very important difference is that this path lead to a files, so the command was unable to properly function. To simply put it, it did not print anything because a file because a file holds not files and/or folders to print. In respose to this path, the command simply printed the path again.
 ### cat
 In this example we get to finally see a functioning cat command. Since the path given was to a file, its content was printed. In this case the path leads to a file named 'es-mx.txt' and prints its content which is '¡Hola Mundo!' which means 'Hello World!' in Mexican Spanish.
