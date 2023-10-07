@@ -11,7 +11,7 @@ This command lists or 'prints' the files and/or folder in the given path. Since 
 This commands purpose is to print the contents of one or more files given by the provided path. This is an error because no path or argument was given, and it simply does not let you run it, ultimately jsut awaiting for user to unput path. User can use '^C' to exit.
 ## Examples using the commands with a path to a directory as an argument
 ![Image](LR1ex2.png) <br>
-*All of these examples were done in the home directory*
+*The first example was done in the home directory, and the last two were done in the messages directory*
 ### cd
 Now that the command has been given a path to follow, it can change the directory. The path given was '/home/lecture1/messages' so it should and did change to the messages directory. 
 ### ls
