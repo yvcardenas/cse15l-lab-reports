@@ -13,9 +13,9 @@ This commands purpose is to print the contents of one or more files given by the
 ![Image](LR1ex2.png) <br>
 *All of these examples were done in the home directory*
 ### cd
-Now that the command is given a 
+Now that the command has been given a path to follow, it can change the directory. The path given was '/home/lecture1/messages' so it should and did change to the messages directory. 
 ### ls
-
+Now that the command has been given a path to follow, it can list all the files and/or folders. Since the path that I provided led to working directory messages, there was no need for an argument but for example purposes the path certainly helped to visualize how to properly use the command. As seen the the screenshot, with the given path, all the folders/files in the messages directory was printed.
 ### cat
 
 ## Examples using the commands with a path to a file as an argument
