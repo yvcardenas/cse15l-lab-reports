@@ -1,6 +1,4 @@
-# Hello World!
-## How are you?
-[Netflix] (https://www.netflix.com/browse)
-![Image](heart.png)
+# CSE 15L Lab Reports
 ---
-> Whats your favorite ruler?
+Yvanna Cardenas
+---
