@@ -8,6 +8,7 @@ This commands whole purpose is to change the directory you are in. If no argumen
 ### ls
 This command lists or 'prints' the files and/or folder in the given path. Since no path is given, it printed the files and folder within the current directory we were in. In this case we were in the home directory so it only printed 'lecture1' since that is the only folder in that directory.
 <br>
+<br>
 ### cat
 This commands purpose is to print the contents of one or more files given by the provided path. There is an error because no path or argument was given, and it simply does not let you run it. Ultimately it is awaiting for the user to input a path, but in this case you have to use '^C' to exit.
 ## Examples using the commands with a path to a directory as an argument
