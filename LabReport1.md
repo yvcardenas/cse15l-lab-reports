@@ -8,7 +8,7 @@ This commands whole purpose is to change the directory you are in. If no argumen
 ### ls
 This command lists or 'prints' the files and/or folder in the given path. Since no path is given, it printed the files and folder within the current directory we were in. In this case we were in the home directory so it only printed 'lecture1' since that is the only folder in that directory.
 ### cat
-This commands purpose is to print the contents of one or more files given by the provided path. This is an error because no path or argument was given, and it simply does not let you run it. Ultimately it is awaiting for user to input a path, but in this case you can use '^C' to exit.
+This commands purpose is to print the contents of one or more files given by the provided path. There is an error because no path or argument was given, and it simply does not let you run it. Ultimately it is awaiting for the user to input a path, but in this case you have to use '^C' to exit.
 ## Examples using the commands with a path to a directory as an argument
 ![Image](LR1ex2.png) <br>
 *The first example was done in the home directory, and the last two were done in the messages directory*
@@ -22,7 +22,7 @@ As I mentioned earlier, the cat command prints the contents of one or more files
 ![Image](LR1ex3.png) <br>
 *All of these examples were done in the home directory*
 ### cd
-As we know, the cd command is used to change directories. In this example the given path lead to a file which evidently meant that command was unable to properly frunction. Instead a message was printed informing the user that the path given was not to a directory. 
+As we know, the cd command is used to change directories. In this example the given path led to a file which evidently meant that command was unable to properly frunction. Instead a message was printed informing the user that the path given was not to a directory. 
 ### ls
 As we saw in the last set of examples, a path can be used as an argument when using the ls command. A very important difference is that this path lead to a file, so the command was unable to properly function. No content was printed because a file connot hold any files and/or folders. In respose to this path, the command simply printed the path again.
 ### cat
