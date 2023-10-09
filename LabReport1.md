@@ -22,6 +22,7 @@ Now that the command has been given a path to follow, it can list all the files 
 As I mentioned earlier, the cat command prints the contents of one or more files. Since the path provided led to a directory/folder the command was unable to properly function. Instead of printing a files content, it informed the user that the argument was indeed a directory.
 <br>
 <br>
+<br>
 ## Examples using the commands with a path to a file as an argument
 ![Image](LR1ex3.png) <br>
 *All of these examples were done in the home directory*
