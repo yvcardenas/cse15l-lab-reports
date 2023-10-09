@@ -20,6 +20,8 @@ Now that the command has been given a path to follow, it can change the director
 Now that the command has been given a path to follow, it can list all the files and/or folders. Since the path that I provided led to the  working directory messages, there was no need for an argument. For example purposes the path certainly helped to visualize how to properly use the command. As seen the the screenshot, with the given path, all the folders/files in the messages directory were printed.
 ### cat
 As I mentioned earlier, the cat command prints the contents of one or more files. Since the path provided led to a directory/folder the command was unable to properly function. Instead of printing a files content, it informed the user that the argument was indeed a directory.
+<br>
+<br>
 ## Examples using the commands with a path to a file as an argument
 ![Image](LR1ex3.png) <br>
 *All of these examples were done in the home directory*
