@@ -72,7 +72,7 @@ $ find /Users/ycardenas/docsearch/technical/911report -type f
 /Users/ycardenas/docsearch/technical/911report/chapter-10.txt
 /Users/ycardenas/docsearch/technical/911report/chapter-11.txt
 ```
-<br>2. The second example for the 'type' option is using 'd' which searches for directories. This is useful because 
+<br>2. The second example for the 'type' option is using 'd' which searches for regular diretories in the given path. The path given goes to the techinical directory so it is only searching in that diretory and its subdirectories. This is useful because sometimes directories will have both files and directories which can make certain actions difficult as you cannot treat files and directories the same. This way, you can section, or specifically refer to the directories in the any given directory and its subdirectories.
 <br>Command:
 ```
 $ find /Users/ycardenas/docsearch/technical -type d  
@@ -92,7 +92,7 @@ $ find /Users/ycardenas/docsearch/technical -type d
 /Users/ycardenas/docsearch/technical/911report
 ```
 <br> __Command-Line Option 2:"-print"__
-<br>1. The first example for the 'print' option is using '' which . This is useful because 
+<br>1. The first example for the 'print' option is using a path that leads to the 911report directory in technical. This command prints the paths for every files and/or directory in the given path, including the origical path. This is useful because you can check the contents of something and also see how to refernece it.
 <br>Command:
 ```
 $ find /Users/ycardenas/docsearch/technical/911report -print
@@ -118,7 +118,7 @@ $ find /Users/ycardenas/docsearch/technical/911report -print
 /Users/ycardenas/docsearch/technical/911report/chapter-10.txt
 /Users/ycardenas/docsearch/technical/911report/chapter-11.txt
 ```
-<br>2. The second example for the '-print' option is using '' which. This is useful because 
+<br>2. The second example for the '-print' option is using a path that leads to the Env_Prot_Agen directory in /technical/government. This command prints the paths for every files and/or directory in the given path, including the origical path. This is useful because you can check the contents of something and also see how to refernece it.
 <br>Command:
 ```
 $ find /Users/ycardenas/docsearch/technical/government/Env_Prot_Agen -print
@@ -142,7 +142,7 @@ $ find /Users/ycardenas/docsearch/technical/government/Env_Prot_Agen -print
 /Users/ycardenas/docsearch/technical/government/Env_Prot_Agen/tech_adden.txt
 ```
 <br> __Command-Line Option 3:"-name"__
-<br>1. The first example for the 'name' option is using '' which. This is useful because 
+<br>1. The first example for the 'name' option is using the pattern '*.txt' which looks for all the files in the given path and inculde '.txt' in their name. This is useful because it allows you to single out specific text files, or categorize certain names of files.
 <br>Command:
 ```
 $ find /Users/ycardenas/docsearch/technical/government/Env_Prot_Agen -name "*.txt"
@@ -164,7 +164,7 @@ $ find /Users/ycardenas/docsearch/technical/government/Env_Prot_Agen -name "*.tx
 /Users/ycardenas/docsearch/technical/government/Env_Prot_Agen/nov1.txt
 /Users/ycardenas/docsearch/technical/government/Env_Prot_Agen/tech_adden.txt
 ```
-<br>2. The second example for the 'name' option is using '' which . This is useful because 
+<br>2. The second example for the 'name' option is using the name 'chapter-1.txt' which looks for all the files in the given path and inculde 'chapter-1.txt' in their name. This is useful because it allows you to find the path of a specific file you might be looking for.
 <br>Command:
 ```
 $ find /Users/ycardenas/docsearch/technical -name "chapter-1.txt"
@@ -174,7 +174,7 @@ $ find /Users/ycardenas/docsearch/technical -name "chapter-1.txt"
 /Users/ycardenas/docsearch/technical/911report/chapter-1.txt
 ```
 <br> __Command-Line Option 4:"-not"__
-<br>1. The first example for the 'mtime' option . This is useful because 
+<br>1. The first example for the '-not' option is the name 'biomed'. In this case the command finds all the directories that do NOT have 'biomed' in its name. This is useful because sometimes we want to exclude a specific folder.
 <br>Command:
 ```
 $ find /Users/ycardenas/docsearch/technical -type d -not -name "biomed"
@@ -192,7 +192,7 @@ $ find /Users/ycardenas/docsearch/technical -type d -not -name "biomed"
 /Users/ycardenas/docsearch/technical/plos
 /Users/ycardenas/docsearch/technical/911report
 ```
-<br>2. The second example for the '-not' option . This is useful because 
+<br>2. The second example for the '-not' option is the name 'biomed'. In this case the command is references all the directories and subdirectories in the current working diretory. The command finds all the directories that do NOT have 'biomed' in its name. This is useful because sometimes we want to exclude a specific folder.
 <br>Command:
 ```
 $ find . -type d -not -name "biomed" 
