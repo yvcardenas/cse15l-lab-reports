@@ -44,68 +44,170 @@ Briefly describe why the fix addresses the issue:
 ```
 This fix has multiple parts that ultimately all together address the issue. Firstly, since we are simply swapping the elements in the input array, there is no need to recurse through the entire array, as this will just result with the exact same input array. Alternatively, we only recurse through half of the input array, swapping every element just once. Secondly, it is important that initialize a temporary integer that can keep track of the number we are kicking, or swapping out. This ensures that the value is not 'lost'. Lastly it is important that we complete the swap by setting our tempInt into its new position which is where we got our previous number.
 ## Part 2 - Researching Commands
-- Consider the commands less, find, and grep. Choose one of them. Online, find 4 interesting command-line options or alternate ways to use the command you chose. To find information about the commands, a simple Web search like “find command-line options” will probably give decent results. There is also a built-in command on many systems called man (short for “manual”) that displays information about commands; you can use man grep, for example, to see a long listing of information about how grep works. Also consider asking ChatGPT!
-- For example, we saw the -name option for find in class. For each of those options, give 2 examples of using it on files and directories from ./technical. Show each example as a code block that shows the command and its output, and write a sentence or two about what it’s doing and why it’s useful.
 ### Chosen Command: find
 The find command is used to search for files and directories within a specified directory hierarchy
 __Command-Line Option 1: "-type"__
-<br>1. The first example for the 'type' option is using 'f' which searches for regular files. This is useful because 
+<br>1. The first example for the 'type' option is using 'f' which searches for regular files. The path given goes to the 911report directory so it is only searching in that diretory. This is useful because sometimes directories will have both files and directories which can make certain actions difficult as you cannot treat files and directories the same. This way, you can section, or specifically refer to the files in the any given directory.
 <br>Command:
 ```
+$ find /Users/ycardenas/docsearch/technical/911report -type f
 ```
 <br>Output:
 ```
+/Users/ycardenas/docsearch/technical/911report/chapter-13.4.txt
+/Users/ycardenas/docsearch/technical/911report/chapter-13.5.txt
+/Users/ycardenas/docsearch/technical/911report/chapter-13.1.txt
+/Users/ycardenas/docsearch/technical/911report/chapter-13.2.txt
+/Users/ycardenas/docsearch/technical/911report/chapter-13.3.txt
+/Users/ycardenas/docsearch/technical/911report/chapter-3.txt
+/Users/ycardenas/docsearch/technical/911report/chapter-2.txt
+/Users/ycardenas/docsearch/technical/911report/chapter-1.txt
+/Users/ycardenas/docsearch/technical/911report/chapter-5.txt
+/Users/ycardenas/docsearch/technical/911report/chapter-6.txt
+/Users/ycardenas/docsearch/technical/911report/chapter-7.txt
+/Users/ycardenas/docsearch/technical/911report/chapter-9.txt
+/Users/ycardenas/docsearch/technical/911report/chapter-8.txt
+/Users/ycardenas/docsearch/technical/911report/preface.txt
+/Users/ycardenas/docsearch/technical/911report/chapter-12.txt
+/Users/ycardenas/docsearch/technical/911report/chapter-10.txt
+/Users/ycardenas/docsearch/technical/911report/chapter-11.txt
 ```
 <br>2. The second example for the 'type' option is using 'd' which searches for directories. This is useful because 
 <br>Command:
 ```
+$ find /Users/ycardenas/docsearch/technical -type d  
 ```
 <br>Output:
 ```
+/Users/ycardenas/docsearch/technical
+/Users/ycardenas/docsearch/technical/government
+/Users/ycardenas/docsearch/technical/government/About_LSC
+/Users/ycardenas/docsearch/technical/government/Env_Prot_Agen
+/Users/ycardenas/docsearch/technical/government/Alcohol_Problems
+/Users/ycardenas/docsearch/technical/government/Gen_Account_Office
+/Users/ycardenas/docsearch/technical/government/Post_Rate_Comm
+/Users/ycardenas/docsearch/technical/government/Media
+/Users/ycardenas/docsearch/technical/plos
+/Users/ycardenas/docsearch/technical/biomed
+/Users/ycardenas/docsearch/technical/911report
 ```
 <br> __Command-Line Option 2:"-print"__
 <br>1. The first example for the 'print' option is using '' which . This is useful because 
 <br>Command:
 ```
+$ find /Users/ycardenas/docsearch/technical/911report -print
 ```
 <br>Output:
 ```
+/Users/ycardenas/docsearch/technical/911report
+/Users/ycardenas/docsearch/technical/911report/chapter-13.4.txt
+/Users/ycardenas/docsearch/technical/911report/chapter-13.5.txt
+/Users/ycardenas/docsearch/technical/911report/chapter-13.1.txt
+/Users/ycardenas/docsearch/technical/911report/chapter-13.2.txt
+/Users/ycardenas/docsearch/technical/911report/chapter-13.3.txt
+/Users/ycardenas/docsearch/technical/911report/chapter-3.txt
+/Users/ycardenas/docsearch/technical/911report/chapter-2.txt
+/Users/ycardenas/docsearch/technical/911report/chapter-1.txt
+/Users/ycardenas/docsearch/technical/911report/chapter-5.txt
+/Users/ycardenas/docsearch/technical/911report/chapter-6.txt
+/Users/ycardenas/docsearch/technical/911report/chapter-7.txt
+/Users/ycardenas/docsearch/technical/911report/chapter-9.txt
+/Users/ycardenas/docsearch/technical/911report/chapter-8.txt
+/Users/ycardenas/docsearch/technical/911report/preface.txt
+/Users/ycardenas/docsearch/technical/911report/chapter-12.txt
+/Users/ycardenas/docsearch/technical/911report/chapter-10.txt
+/Users/ycardenas/docsearch/technical/911report/chapter-11.txt
 ```
-<br>2. The second example for the '' option is using '' which. This is useful because 
+<br>2. The second example for the '-print' option is using '' which. This is useful because 
 <br>Command:
 ```
+$ find /Users/ycardenas/docsearch/technical/government/Env_Prot_Agen -print
 ```
 <br>Output:
 ```
+/Users/ycardenas/docsearch/technical/government/Env_Prot_Agen
+/Users/ycardenas/docsearch/technical/government/Env_Prot_Agen/multi102902.txt
+/Users/ycardenas/docsearch/technical/government/Env_Prot_Agen/section-by-section_summary.txt
+/Users/ycardenas/docsearch/technical/government/Env_Prot_Agen/jeffordslieberm.txt
+/Users/ycardenas/docsearch/technical/government/Env_Prot_Agen/final.txt
+/Users/ycardenas/docsearch/technical/government/Env_Prot_Agen/ctf7-10.txt
+/Users/ycardenas/docsearch/technical/government/Env_Prot_Agen/ctf1-6.txt
+/Users/ycardenas/docsearch/technical/government/Env_Prot_Agen/ro_clear_skies_book.txt
+/Users/ycardenas/docsearch/technical/government/Env_Prot_Agen/ctm4-10.txt
+/Users/ycardenas/docsearch/technical/government/Env_Prot_Agen/1-3_meth_901.txt
+/Users/ycardenas/docsearch/technical/government/Env_Prot_Agen/atx1-6.txt
+/Users/ycardenas/docsearch/technical/government/Env_Prot_Agen/tech_sectiong.txt
+/Users/ycardenas/docsearch/technical/government/Env_Prot_Agen/bill.txt
+/Users/ycardenas/docsearch/technical/government/Env_Prot_Agen/nov1.txt
+/Users/ycardenas/docsearch/technical/government/Env_Prot_Agen/tech_adden.txt
 ```
 <br> __Command-Line Option 3:"-name"__
 <br>1. The first example for the 'name' option is using '' which. This is useful because 
 <br>Command:
 ```
+$ find /Users/ycardenas/docsearch/technical/government/Env_Prot_Agen -name "*.txt"
 ```
 <br>Output:
 ```
+/Users/ycardenas/docsearch/technical/government/Env_Prot_Agen/multi102902.txt
+/Users/ycardenas/docsearch/technical/government/Env_Prot_Agen/section-by-section_summary.txt
+/Users/ycardenas/docsearch/technical/government/Env_Prot_Agen/jeffordslieberm.txt
+/Users/ycardenas/docsearch/technical/government/Env_Prot_Agen/final.txt
+/Users/ycardenas/docsearch/technical/government/Env_Prot_Agen/ctf7-10.txt
+/Users/ycardenas/docsearch/technical/government/Env_Prot_Agen/ctf1-6.txt
+/Users/ycardenas/docsearch/technical/government/Env_Prot_Agen/ro_clear_skies_book.txt
+/Users/ycardenas/docsearch/technical/government/Env_Prot_Agen/ctm4-10.txt
+/Users/ycardenas/docsearch/technical/government/Env_Prot_Agen/1-3_meth_901.txt
+/Users/ycardenas/docsearch/technical/government/Env_Prot_Agen/atx1-6.txt
+/Users/ycardenas/docsearch/technical/government/Env_Prot_Agen/tech_sectiong.txt
+/Users/ycardenas/docsearch/technical/government/Env_Prot_Agen/bill.txt
+/Users/ycardenas/docsearch/technical/government/Env_Prot_Agen/nov1.txt
+/Users/ycardenas/docsearch/technical/government/Env_Prot_Agen/tech_adden.txt
 ```
 <br>2. The second example for the 'name' option is using '' which . This is useful because 
 <br>Command:
 ```
+$ find /Users/ycardenas/docsearch/technical -name "chapter-1.txt"
 ```
 <br>Output:
 ```
+/Users/ycardenas/docsearch/technical/911report/chapter-1.txt
 ```
-<br> __Command-Line Option 4:"-mtime n"__
-<br>1. The first example for the 'mtime' option has n = 7 where the command searches for files modified approximately "n" days ago which in this case is 7 days. This is useful because 
+<br> __Command-Line Option 4:"-not"__
+<br>1. The first example for the 'mtime' option . This is useful because 
 <br>Command:
 ```
+$ find /Users/ycardenas/docsearch/technical -type d -not -name "biomed"
 ```
 <br>Output:
 ```
+/Users/ycardenas/docsearch/technical
+/Users/ycardenas/docsearch/technical/government
+/Users/ycardenas/docsearch/technical/government/About_LSC
+/Users/ycardenas/docsearch/technical/government/Env_Prot_Agen
+/Users/ycardenas/docsearch/technical/government/Alcohol_Problems
+/Users/ycardenas/docsearch/technical/government/Gen_Account_Office
+/Users/ycardenas/docsearch/technical/government/Post_Rate_Comm
+/Users/ycardenas/docsearch/technical/government/Media
+/Users/ycardenas/docsearch/technical/plos
+/Users/ycardenas/docsearch/technical/911report
 ```
-<br>2. The second example for the 'mtime' option has n = 2 where the command searches for files modified approximately "n" days ago which in this case is 2 days. This is useful because 
+<br>2. The second example for the '-not' option . This is useful because 
 <br>Command:
 ```
+$ find . -type d -not -name "biomed" 
 ```
 <br>Output:
 ```
+.
+./government
+./government/About_LSC
+./government/Env_Prot_Agen
+./government/Alcohol_Problems
+./government/Gen_Account_Office
+./government/Post_Rate_Comm
+./government/Media
+./plos
+./911report
 ```
-- Along with each option/mode you show, cite your source for how you found out about it as a URL or a description of where you found it. See the syllabus on Academic Integrity and how to cite sources like ChatGPT for this class.
+I find out about all of these examples through ChatGPT. Here is the prompts I used, "find command line options for the less command", "now for the find command", "now for the grep command".
