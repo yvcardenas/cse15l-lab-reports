@@ -1,7 +1,5 @@
 # Lab Report 4 - Vim
 In this lab report, I will be reproducing steps 4 - 9 from the Week 7 lab, summarizing the steps and keys I used during their process. 
-<br>"summarize the commands you ran and what the effect of those keypresses were"
-
 ## Step 4 - Log into ieng6
 ### **Screenshot for step 4:**
 ![Image](LR4.step4.png)
